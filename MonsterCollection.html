@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Monster Collection</title>
+		<style>
+			body{margin:0;padding:0;}
+			.header{background-color:#000000;color:#F3F3F3;width:800px;height:50px;}
+			.main{float:left;}
+			.right{height:427px;background-color:#FFA61B;width:160px;float:left;}
+			.bottom{height:50px;width:800px;padding-top:430px;background-color:#575131;}
+		</style>
+	</head>
+  
+  <body>
+	<div class="header">
+		<h1>Day 1        $2000</h1>
+	</div>
+	<div class="main">
+		<canvas id="can" width="640" height="427" style="background-image:url(image/home_background.jpg);background-repeat:no-repeat;"></canvas>
+		<img src="image/little_demon.png" id="pet" alt="" style="display:none"/>
+	</div>
+	<div class="right">
+		<br/><br/><br/><br/>
+		<input id="first" type="button" value="Feed"/><br/><br/>
+		<input id="second" type="button" value="Status"/><br/><br/>
+		<input id="third" type="button" value="Next Day"/>
+	</div>
+	<div class="bottom">
+		<button id="one" onclick="onebutton(this)">Store</button>
+		<input id="two" type="button" value="Storage"/>
+	</div>
+	<script>
+		var canvas = document.getElementById("can");
+		var ctx = canvas.getContext('2d');
+		var day=1,money=2000;
+		var pet=document.getElementById("pet");
+		ctx.drawImage(pet,300,200,60,160);
+		/*funcation onebutton(obj) {
+			if (obj.value == "Store") {
+				obj.innerHTML="Buy";
+			}
+			if (obj.value == "Buy") {
+				obj.innerHTML="Store";
+			}
+		}*/
+	</script>
+  </body>
+ </html>

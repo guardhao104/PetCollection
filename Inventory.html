@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<title>Monster Collection</title>
 		<script src="food.js"></script>
-		<link rel="stylesheet" type="text/css" href="Storecss.css">
+		<link rel="stylesheet" type="text/css" href="inventory.css">
 		
 		<style>
-			body{margin:0;padding:0;}
-			.header{background-color:#000000;color:#F3F3F3;width:800px;height:50px;color:#1eb2cc;}
+			
+			.header{background-color:#000000;color:#F3F3F3;width:800px;height:50px;}
 			.main{float:left;}
-			.right{height:427px;background-color:#FFA61B;width:150px; float:left;}
+			.right{height:427px;background-color:#FFA61B;width:160px;float:left;}
 			.bottom{height:50px;width:800px;padding-top:430px;background-color:#575131;}
 		</style>
 	</head>
@@ -190,106 +190,76 @@
 	
 	
 	
-		
 	
 	<body onload="urMoney()">
 	
-		
-
 	<div class="header">
-		<h1>Day 1        $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
+		<h1>Day 1        $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store</h1>
 	</div>
 	<div class="main">
 		
 		
-			
-			<table id="Icons">
-          <tr>
-            
-            <td class="ico"> <button onclick="addApples()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
-        
-		
-            </tr>
-
-             <tr>
-            
-            <td class="ico"> <button onclick="addBread()" class="breeze">Storage<img src="image/pancakes1.png" class="menu"></button><br></td>
-        
-			
-              
-			   </tr>
-          <tr>
-            
-            <td  class="ico"><button onclick="addMilk()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
-        
-		
-               </tr>
-			 <tr>
-
-			 <td  class="ico"><button onclick="addMilk()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
-        
-		
-               </tr>
-			   <tr>
-            <td  class="ico"><button onclick="addMilk()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
-        
-		
-               </tr>
-			</table>
-			
-			
-			
-			<span id="man"><img src="image/Agent.png" height="400" width="200"></span>
-			
-			
-		
-			
 			<table id="Inventory">
           <tr>
-            <td class="storeItem"> <button onclick="addApples()" class="oko"><span class="butin">Price: 65$</span><img src="image/coffee1.png" class="pics"></button><br></td>
-            <td class="storeItem"> <button onclick="addChicken()" class="oko"><span class="butin">Price: 33$</span><img src="image/crab_meat.png" class="pics"></button><br></td>
-            <td class="storeItem"> <button onclick="addBanana()"class="oko"><span class="butin">Price: 16$</span><img src="image/honeybun1.png" class="pics"></button><br>  </td>
+            <td></td>
+            <td class="storeItem"> <button onclick="addApples()"><img src="image/coffee1.png" class="pics"></button> Price: 65$ </td>
+            <td class="storeItem"> <button onclick="addChicken()"><img src="image/crab_meat.png" class="pics"></button> Price: 33$</td>
+            <td class="storeItem"> <button onclick="addBanana()"><img src="image/honeybun1.png" class="pics"></button> Price: 16$ </td>
 			<script>
 			
 			</script>
             </tr>
 
-            <tr>
-            <td class="storeItem"> <button onclick="addBread()" class="oko"><span class="butin">Price: 10$</span><img src="image/pancakes1.png" class="pics"></button><br></td>
-            <td class="storeItem"> <button onclick="addSteak()" class="oko"><span class="butin">Price: 5$</span><img src="image/Apple.png" class="pics"></button> <br> </td>
-            <td class="storeItem"> <button onclick="addYogurt()"class="oko"><span class="butin">Price: 20$</span><img src="image/WaterMelonLarge.png" class="pics"></button><br>  </td>
+             <tr>
+            <td></td>
+            <td class="storeItem"> <button onclick="addBread()"><img src="image/pancakes1.png" class="pics"></button> Price: 10$ </td>
+            <td class="storeItem"> <button onclick="addSteak()"><img src="image/Apple.png" class="pics"></button> Price: 5$ </td>
+            <td class="storeItem"> <button onclick="addYogurt()"><img src="image/WaterMelonLarge.png" class="pics"></button> Price: 20$ </td>
 			
-             
-		  </tr>
-      
+              
+			   </tr>
+          <tr>
+            <td></td>
+            <td class="storeItem"><button onclick="addMilk()"><img src="image/tea1.png" class="pics"></button> Price: 35$ </td>
+            <td class="storeItem"><button onclick="addWatermelon()"><img src="image/eggsbenedict1.png" class="pics"></button> Price: 50$ </td>
+            <td class="storeItem"><button onclick="addPork()"><img src="image/muffin1.png" class="pics"></button> Price: 7$ </td>
+		
+               </tr>
+          
+       
+          
 
 
-    </table>
-	<div id="noah">
-    </div>
-	<div id="total"> 
-         Total price:
-	</div>	
-	<button id="hey">Buy</button>
-	<button id="heyo">Remove</button>
-	<canvas id="can" width="800" height="500">
-			
-			</canvas>
-	</div>
-	
-	
-	
-
-	
-	
+        </table>
+		
+		
+		
+		
+		
+		<canvas id="can" width="1000" height="427" style="background-image:url(image/home_background.jpg);background-repeat:no-repeat;">
+		
+		</canvas>
+		
 	
 	
 	
 	
 	
 		
-		<script>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="bottom">
+		<button class="button" onclick="attemptBuy()">Buy</button>
+		<input class="button" type="button" value="Cancel"/>
+	</div>
+	
+	<script>
 			
 		var canvas = document.getElementById("can");
 		var ctx = canvas.getContext('2d');

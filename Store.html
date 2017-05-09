@@ -18,174 +18,75 @@
   
 	
 	<script>
-	var cost = 0;
-	var apple = 0;
+	var cost=0;
 	var appleCost = 65;
 	var money = 2000;
 
 	function addApples() {
-			apple ++;
-			document.getElementById("1").innerHTML = apple;
-			cost += appleCost;
-			document.getElementById("10").innerHTML = cost;
-	
-		};
-	
-	var chicken = 0;
-	var chickenCost = 33;
-	function addChicken() {
-			chicken ++;
-			document.getElementById("2").innerHTML = chicken;
-			cost += chickenCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-	
-	var banana = 0;
-	var bananaCost = 16;
-	function addBanana() {
-			banana++;
-			document.getElementById("3").innerHTML = banana;
-			cost += bananaCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-	
-	var bread = 0;
-	var breadCost = 10;
-	function addBread() {
-			bread++;
-			document.getElementById("4").innerHTML = bread;
-			cost += breadCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-
-	var steak = 0;
-	var steakCost = 5;
-	function addSteak() {
-			steak++;
-			document.getElementById("5").innerHTML = steak;
-			cost += steakCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-	
-	var yogurt = 0;
-	var yogurtCost = 20;
-	function addYogurt() {
-			yogurt ++;
-			document.getElementById("6").innerHTML = yogurt;
-			cost += yogurtCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-	
-	var milk = 0;
-    var milkCost = 35;
-	function addMilk() {
-			milk++;
-			document.getElementById("7").innerHTML = milk;
-			cost += milkCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-	
-	var watermelon = 0;
-    var watermelonCost = 50;
-	function addWatermelon() {
-		watermelon++;
-		document.getElementById("8").innerHTML = watermelon;
-			cost += watermelonCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-	
-	var pork = 0;
-    var porkCost = 7;
-	function addPork() {
-			pork++;
-			document.getElementById("9").innerHTML = pork;
-			cost += porkCost;
-			document.getElementById("10").innerHTML = cost;
-			};
-	function removeAll() {
-	apple = null;
-	chicken = null;
-	banana = null;
-	bread = null;
-	steak = null;
-	yogurt = null;
-	milk = null;
-	watermelon = null;
-	pork = null;
-	cost = null;
-	document.getElementById("1").innerHTML = apple;
-	document.getElementById("2").innerHTML = chicken;
-	document.getElementById("3").innerHTML = banana;
-	document.getElementById("4").innerHTML = bread;
-	document.getElementById("5").innerHTML = steak;
-	document.getElementById("6").innerHTML = yogurt;
-	document.getElementById("7").innerHTML = milk;
-	document.getElementById("8").innerHTML = watermelon;
-	document.getElementById("9").innerHTML = pork;
+	cost += appleCost;
 	document.getElementById("10").innerHTML = cost;
-	
 	};
 	
+	var chickenCost = 33;
+	
+	function addChicken() {
+	cost += chickenCost;
+	document.getElementById("10").innerHTML = cost;
+	};
+	
+	var bananaCost = 16;
+	
+	function addBanana() {
+	cost += bananaCost;
+	document.getElementById("10").innerHTML = cost;
+	};
+	
+	var breadCost = 10;
+	
+	function addBread() {
+	cost += breadCost;
+	document.getElementById("10").innerHTML = cost;
+	};
+
+	var steakCost = 5;
+	
+	function addSteak() {
+	cost += steakCost;
+	document.getElementById("10").innerHTML = cost;
+	};
+	
+	var yogurtCost = 20;
+	
+	function addYogurt() {
+	cost += yogurtCost;
+	document.getElementById("10").innerHTML = cost;
+	};
+	
+	function removeAll() {
+	cost=0;
+	document.getElementById("10").innerHTML = cost;
+	};
 	
 	function attemptBuy() {
-	
 	if(cost>money) {
 	alert("Were sorry you do not have enough money");
-	apple = null;
-	chicken = null;
-	banana = null;
-	bread = null;
-	steak = null;
-	yogurt = null;
-	milk = null;
-	watermelon = null;
-	pork = null;
-	cost = null;
-	document.getElementById("1").innerHTML = apple;
-	document.getElementById("2").innerHTML = chicken;
-	document.getElementById("3").innerHTML = banana;
-	document.getElementById("4").innerHTML = bread;
-	document.getElementById("5").innerHTML = steak;
-	document.getElementById("6").innerHTML = yogurt;
-	document.getElementById("7").innerHTML = milk;
-	document.getElementById("8").innerHTML = watermelon;
-	document.getElementById("9").innerHTML = pork;
+	cost=0;
 	document.getElementById("10").innerHTML = cost;
 	document.getElementById("11").innerHTML = money;
 	}
-	
 	else {
 	alert("Thank you for your purchase");
 	money -= cost;
-	apple = null;
-	chicken = null;
-	banana = null;
-	bread = null;
-	steak = null;
-	yogurt = null;
-	milk = null;
-	watermelon = null;
-	pork = null;
-	cost = null;
-	document.getElementById("1").innerHTML = apple;
-	document.getElementById("2").innerHTML = chicken;
-	document.getElementById("3").innerHTML = banana;
-	document.getElementById("4").innerHTML = bread;
-	document.getElementById("5").innerHTML = steak;
-	document.getElementById("6").innerHTML = yogurt;
-	document.getElementById("7").innerHTML = milk;
-	document.getElementById("8").innerHTML = watermelon;
-	document.getElementById("9").innerHTML = pork;
+	cost=0;
 	document.getElementById("10").innerHTML = cost;
 	document.getElementById("11").innerHTML = money;
 	}
 	};
 	
 	function urMoney() {
+		document.getElementById("10").innerHTML = cost;
 		document.getElementById("11").innerHTML = money;
-    
-	};
-	
+   	};
 	</script>
 	
 	
@@ -201,78 +102,42 @@
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
 	</div>
 	<div class="main">
-		
-		
-			
-			<table id="Icons">
-          <tr>
-            
-            <td class="ico"> <button onclick="addApples()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
-        
-		
-            </tr>
-
-             <tr>
-            
-            <td class="ico"> <button onclick="addBread()" class="breeze">Storage<img src="image/pancakes1.png" class="menu"></button><br></td>
-        
-			
-              
-			   </tr>
-          <tr>
-            
-            <td  class="ico"><button onclick="addMilk()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
-        
-		
-               </tr>
-			 <tr>
-
-			 <td  class="ico"><button onclick="addMilk()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
-        
-		
-               </tr>
-			   <tr>
-            <td  class="ico"><button onclick="addMilk()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
-        
-		
-               </tr>
-			</table>
-			
-			
-			
-			<span id="man"><img src="image/Agent.png" height="400" width="200"></span>
-			
-			
-		
-			
-			<table id="Inventory">
-          <tr>
-            <td class="storeItem"> <button onclick="addApples()" class="oko"><span class="butin">Price: 65$</span><img src="image/coffee1.png" class="pics"></button><br></td>
-            <td class="storeItem"> <button onclick="addChicken()" class="oko"><span class="butin">Price: 33$</span><img src="image/crab_meat.png" class="pics"></button><br></td>
-            <td class="storeItem"> <button onclick="addBanana()"class="oko"><span class="butin">Price: 16$</span><img src="image/honeybun1.png" class="pics"></button><br>  </td>
-			<script>
-			
-			</script>
-            </tr>
-
-            <tr>
-            <td class="storeItem"> <button onclick="addBread()" class="oko"><span class="butin">Price: 10$</span><img src="image/pancakes1.png" class="pics"></button><br></td>
-            <td class="storeItem"> <button onclick="addSteak()" class="oko"><span class="butin">Price: 5$</span><img src="image/Apple.png" class="pics"></button> <br> </td>
-            <td class="storeItem"> <button onclick="addYogurt()"class="oko"><span class="butin">Price: 20$</span><img src="image/WaterMelonLarge.png" class="pics"></button><br>  </td>
-			
-             
-		  </tr>
-      
-
-
-    </table>
+		<table id="Icons">
+         <tr>
+         <td class="ico"> <button onclick="addApples()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
+         </tr>
+		 <tr>
+         <td class="ico"> <button onclick="addBread()" class="breeze">Storage<img src="image/pancakes1.png" class="menu"></button><br></td>
+         </tr>
+         <tr>
+         <td  class="ico"><button onclick="addMilk()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
+         </tr>
+	     <tr>
+		 <td  class="ico"><button onclick="addMilk()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
+         </tr>
+	     <tr>
+         <td  class="ico"><button onclick="addMilk()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
+         </tr>
+	     </table>
+		 <span id="man"><img src="image/Agent.png" height="400" width="200"></span>
+		 <table id="Inventory">
+         <tr>
+         <td class="storeItem"> <button onclick="addApples()" class="oko"><span class="butin">Price: 65$</span><img src="image/coffee1.png" class="pics"></button><br></td>
+         <td class="storeItem"> <button onclick="addChicken()" class="oko"><span class="butin">Price: 33$</span><img src="image/crab_meat.png" class="pics"></button><br></td>
+         <td class="storeItem"> <button onclick="addBanana()"class="oko"><span class="butin">Price: 16$</span><img src="image/honeybun1.png" class="pics"></button><br>  </td>      </tr>
+		 <tr>
+         <td class="storeItem"> <button onclick="addBread()" class="oko"><span class="butin">Price: 10$</span><img src="image/pancakes1.png" class="pics"></button><br></td>
+         <td class="storeItem"> <button onclick="addSteak()" class="oko"><span class="butin">Price: 5$</span><img src="image/Apple.png" class="pics"></button> <br> </td>
+         <td class="storeItem"> <button onclick="addYogurt()"class="oko"><span class="butin">Price: 20$</span><img src="image/WaterMelonLarge.png" class="pics"></button><br>  </td>
+	     </tr>
+         </table>
 	<div id="noah">
     </div>
 	<div id="total"> 
-         Total price:
+         Total price:<span id="10"></span>
 	</div>	
-	<button id="hey">Buy</button>
-	<button id="heyo">Remove</button>
+	<button id="hey" onclick="attemptBuy()">Buy</button>
+	<button id="heyo" onclick ="removeAll()">Remove</button>
 	<canvas id="can" width="800" height="500">
 			
 			</canvas>
@@ -289,11 +154,10 @@
 	
 	
 		
-		<script>
-			
+		<script>			
 		var canvas = document.getElementById("can");
 		var ctx = canvas.getContext('2d');
-		var day=1,money=2000;
+		var day=1, money=2000;
 		var pet=document.getElementById("pet");
 		ctx.drawImage(pet,300,200,60,160);
 		/*funcation onebutton(obj) {
@@ -304,6 +168,6 @@
 				obj.innerHTML="Store";
 			}
 		}*/
-	</script>
-  </body>
- </html>
+	    </script>
+        </body>
+        </html>

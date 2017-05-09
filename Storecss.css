@@ -21,7 +21,7 @@ text-align:    center;
 text-shadow:   1px 1px #000000;
 }
 #noah{background-color: #ed8700; width:20px; height: 20px;position: absolute; padding-left: 400px; padding-top:350px;margin-left: 300px;margin-top:20px}
-#total{margin-left:327px;margin-top:330px;position:absolute;font-size:24px; background-color: #951919;padding: 5px 50px 3px 7px;height: 33px; color:yellow;border: 3px solid black}
+#total{margin-left:300px;margin-top:330px;position:absolute;font-size:24px; background-color: #951919;padding: 5px 50px 3px 7px;height: 33px; color:yellow;border: 3px solid black}
 
 #Icons {position: absolute; z-index:3;padding-top:10px}
 .ico{padding-bottom:10px; padding-left: 10px}

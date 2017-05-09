@@ -3,90 +3,18 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Monster Collection</title>
-		<script src="food.js"></script>
+		<script src="sto.js"></script>
 		<link rel="stylesheet" type="text/css" href="Storecss.css">
 		
 		<style>
-			body{margin:0;padding:0;}
-			.header{background-color:#000000;color:#F3F3F3;width:800px;height:50px;color:#1eb2cc;}
-			.main{float:left;}
-			.right{height:427px;background-color:#FFA61B;width:150px; float:left;}
-			.bottom{height:50px;width:800px;padding-top:430px;background-color:#575131;}
+		
 		</style>
 	</head>
   
   
 	
 	<script>
-	var cost=0;
-	var appleCost = 65;
-	var money = 2000;
-
-	function addApples() {
-	cost += appleCost;
-	document.getElementById("10").innerHTML = cost;
-	};
 	
-	var chickenCost = 33;
-	
-	function addChicken() {
-	cost += chickenCost;
-	document.getElementById("10").innerHTML = cost;
-	};
-	
-	var bananaCost = 16;
-	
-	function addBanana() {
-	cost += bananaCost;
-	document.getElementById("10").innerHTML = cost;
-	};
-	
-	var breadCost = 10;
-	
-	function addBread() {
-	cost += breadCost;
-	document.getElementById("10").innerHTML = cost;
-	};
-
-	var steakCost = 5;
-	
-	function addSteak() {
-	cost += steakCost;
-	document.getElementById("10").innerHTML = cost;
-	};
-	
-	var yogurtCost = 20;
-	
-	function addYogurt() {
-	cost += yogurtCost;
-	document.getElementById("10").innerHTML = cost;
-	};
-	
-	function removeAll() {
-	cost=0;
-	document.getElementById("10").innerHTML = cost;
-	};
-	
-	function attemptBuy() {
-	if(cost>money) {
-	alert("Were sorry you do not have enough money");
-	cost=0;
-	document.getElementById("10").innerHTML = cost;
-	document.getElementById("11").innerHTML = money;
-	}
-	else {
-	alert("Thank you for your purchase");
-	money -= cost;
-	cost=0;
-	document.getElementById("10").innerHTML = cost;
-	document.getElementById("11").innerHTML = money;
-	}
-	};
-	
-	function urMoney() {
-		document.getElementById("10").innerHTML = cost;
-		document.getElementById("11").innerHTML = money;
-   	};
 	</script>
 	
 	
@@ -97,17 +25,17 @@
 	
 		
 
-	<div class="header">
+	<div id="header">
 		<h1>Day 1        $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
 	</div>
 	<div class="main">
 		<table id="Icons">
          <tr>
-         <td class="ico"> <button onclick="addApples()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
+         <td class="ico"> <button onclick="openStore()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
          </tr>
 		 <tr>
-         <td class="ico"> <button onclick="addBread()" class="breeze">Storage<img src="image/pancakes1.png" class="menu"></button><br></td>
+         <td class="ico"> <button onclick="openInventory()" class="breeze">Storage<img src="image/pancakes1.png" class="menu"></button><br></td>
          </tr>
          <tr>
          <td  class="ico"><button onclick="addMilk()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
@@ -119,7 +47,8 @@
          <td  class="ico"><button onclick="addMilk()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
          </tr>
 	     </table>
-		 <span id="man"><img src="image/Agent.png" height="400" width="200"></span>
+		<div id="store">
+		<span id="man"><img src="image/Agent.png" height="400" width="200"></span>
 		 <table id="Inventory">
          <tr>
          <td class="storeItem"> <button onclick="addApples()" class="oko"><span class="butin">Price: 65$</span><img src="image/coffee1.png" class="pics"></button><br></td>
@@ -131,6 +60,11 @@
          <td class="storeItem"> <button onclick="addYogurt()"class="oko"><span class="butin">Price: 20$</span><img src="image/WaterMelonLarge.png" class="pics"></button><br>  </td>
 	     </tr>
          </table>
+	
+	
+	
+	
+	
 	<div id="noah">
     </div>
 	<div id="total"> 
@@ -138,9 +72,65 @@
 	</div>	
 	<button id="hey" onclick="attemptBuy()">Buy</button>
 	<button id="heyo" onclick ="removeAll()">Remove</button>
-	<canvas id="can" width="800" height="500">
-			
-			</canvas>
+	</div>
+	
+	<div id="sInventory">
+<table id="storageInventory">
+        <tr>
+        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
+        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
+		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>      
+		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
+		</tr>
+		<tr>
+        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
+        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
+		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>      
+		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
+		</tr>		
+		<tr>
+        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
+        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
+		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>	 
+	    <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+	    </tr>
+	    <tr>
+        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
+		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
+        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
+	    </tr>        
+		</table>
+	<div id="fridgeLabel">
+	<span class="butin">Freezer</span>
+	</div>
+	<div id="freezerLabel">
+	<span class="butin">Fridge</span>
+	</div>
+	<div id="shelfLabel">
+	<span class="butin">Shelf</span>
+	</div>
+	
+	
+	
+	<div id="freezer">
+	
+	</div>
+	<div id="fridge">
+	
+	</div>
+	<div id="noah1">
+
+	
+	</div>
+	<button id="heyoo" onclick ="removeAll()">Cancel</button>
+	</div>
+	
+	
 	</div>
 	
 	
@@ -155,11 +145,9 @@
 	
 		
 		<script>			
-		var canvas = document.getElementById("can");
-		var ctx = canvas.getContext('2d');
-		var day=1, money=2000;
-		var pet=document.getElementById("pet");
-		ctx.drawImage(pet,300,200,60,160);
+	
+	
+		
 		/*funcation onebutton(obj) {
 			if (obj.value == "Store") {
 				obj.innerHTML="Buy";

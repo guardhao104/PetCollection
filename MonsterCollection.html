@@ -4,46 +4,95 @@
 		<meta charset="utf-8">
 		<title>Monster Collection</title>
 		<style>
-			body{margin:0;padding:0;}
-			.header{background-color:#000000;color:#F3F3F3;width:800px;height:50px;}
-			.main{float:left;}
-			.right{height:427px;background-color:#FFA61B;width:160px;float:left;}
-			.bottom{height:50px;width:800px;padding-top:430px;background-color:#575131;}
+			body {
+				text-align: center;
+				background: #000000;
+				padding: 0;
+				border: 0;
+				margin: 0;
+				height: 100%;
+			}
+			.gamePanel{}
+			.header{
+				height: 70px;
+				width:100%;
+				background-color: #333333;
+			}
+			h2 {color:#ffffff;}
+			#day {float:left;margin-right:35%;}
+			#score {float:left;}
+			#gold {float:right;}
+			.main{
+				position: relative;
+				width:100%;
+				height:550px;
+				background-image: url(./img/bedroom_background2.jpg);
+				background-repeat: no-repeat;
+				
+			}
+			.buttonModule{
+				padding: 15px 0 0 15px;
+				float:left;
+			}
+			.button{
+				padding: 10px;
+				margin: 20px;
+				border:1px solid #ccc;
+				box-shadow: 0 0 6px #ccc;
+				border-radius: 5px;
+				background-color: rgba(28,28,28,0.5);
+			}
+			.button img{
+				width:50px;
+				height:50px;
+			}
+			#canvas{
+				background-color: rgba(28,28,28,0.8);
+				position: absolute;
+				top: 70px;
+				right:30px;
+				width: 600px;
+				height: 400px;
+				display:none;
+			}
 		</style>
+		<script src=".js/jquery-3.2.1.min.js"></script>
+		<script src=".js/js1.js"></script>
 	</head>
   
   <body>
+  <div class="gamePanel">
 	<div class="header">
-		<h1>Day 1        $2000</h1>
+		<h2 id="day">Day 01</h2>
+		<h2 id="score">Score: 0</h2>
+		<h2 id="gold">Gold: 2000</h2>
 	</div>
 	<div class="main">
-		<canvas id="can" width="640" height="427" style="background-image:url(image/home_background.jpg);background-repeat:no-repeat;"></canvas>
-		<img src="image/little_demon.png" id="pet" alt="" style="display:none"/>
+		<div class="buttonModule">
+			<div class="button">
+				<img id="shop" src="./img/shop_icon.png"/>
+			</div>
+			<div class="button">
+				<img id="storage" src="./img/storage_icon.png"/>
+			</div>
+			<div class="button">
+				<img id="feed" src="./img/feed_icon.png"/>
+			</div>
+			<div class="button">
+				<img id="status" src="./img/status_icon.png"/>
+			</div>
+			<div class="button">
+				<img id="sleep" src="./img/sleep_icon.png"/>
+			</div>
+		</div>
+		<div class="panel">
+			<div class="npc">
+			</div>
+			<div class="itemPanel">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
 	</div>
-	<div class="right">
-		<br/><br/><br/><br/>
-		<input id="first" type="button" value="Feed"/><br/><br/>
-		<input id="second" type="button" value="Status"/><br/><br/>
-		<input id="third" type="button" value="Next Day"/>
-	</div>
-	<div class="bottom">
-		<button id="one" onclick="onebutton(this)">Store</button>
-		<input id="two" type="button" value="Storage"/>
-	</div>
-	<script>
-		var canvas = document.getElementById("can");
-		var ctx = canvas.getContext('2d');
-		var day=1,money=2000;
-		var pet=document.getElementById("pet");
-		ctx.drawImage(pet,300,200,60,160);
-		/*funcation onebutton(obj) {
-			if (obj.value == "Store") {
-				obj.innerHTML="Buy";
-			}
-			if (obj.value == "Buy") {
-				obj.innerHTML="Store";
-			}
-		}*/
-	</script>
+  </div>
   </body>
  </html>

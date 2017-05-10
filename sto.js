@@ -74,13 +74,28 @@ var cost=0;
    	};
 	
 	function openStore() {
+		document.getElementById('mainPage').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'hidden';
 	document.getElementById('store').style.visibility = 'visible';
 
      
 };
 	function openInventory() {
+		document.getElementById('mainPage').style.visibility = 'hidden';
 document.getElementById('store').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'visible';
 	};
-		
+	var days = 1;
+	function gotoNextDay(){
+	days++;
+	document.getElementById('mainPage').style.visibility = 'visible';
+	document.getElementById('store').style.visibility = 'hidden';
+	document.getElementById('sInventory').style.visibility = 'hidden';
+	document.getElementById("day").innerHTML = days;
+	};
+	function back(){
+	document.getElementById('mainPage').style.visibility = 'visible';
+	document.getElementById('store').style.visibility = 'hidden';
+	document.getElementById('sInventory').style.visibility = 'hidden';
+	document.getElementById("day").innerHTML = days;
+	};

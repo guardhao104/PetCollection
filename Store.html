@@ -26,10 +26,13 @@
 		
 
 	<div id="header">
-		<h1>Day 1        $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
+		<h1 ><button class="mIco" onclick="back()" >Main<br><img src="image/coffee1.png" height="10" width="10" ></button>&nbsp;&nbsp;&nbsp;&nbsp;Day <b id ="day">1 </b>       $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
 	</div>
 	<div class="main">
+		<div id ="mainPage">
+		<span id="pet"><img src="image/hamster.png" height="400" width="400"></span>
+		</div>
 		<table id="Icons">
          <tr>
          <td class="ico"> <button onclick="openStore()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
@@ -44,7 +47,7 @@
 		 <td  class="ico"><button onclick="addMilk()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
          </tr>
 	     <tr>
-         <td  class="ico"><button onclick="addMilk()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
+         <td  class="ico"><button onclick="gotoNextDay()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
          </tr>
 	     </table>
 		<div id="store">
@@ -67,7 +70,7 @@
 	
 	<div id="noah">
     </div>
-	<div id="total"> 
+	<div id="total" > 
          Total price:<span id="10"></span>
 	</div>	
 	<button id="hey" onclick="attemptBuy()">Buy</button>
@@ -127,7 +130,7 @@
 
 	
 	</div>
-	<button id="heyoo" onclick ="removeAll()">Cancel</button>
+	<button id="heyoo" onclick ="back()">Cancel</button>
 	</div>
 	
 	

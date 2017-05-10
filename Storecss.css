@@ -3,7 +3,8 @@
 #Inventory td, th {padding:20px; }
 .storeItem {padding-right:10px; padding-bottom: 10px;}
 #sInventory{visibility:hidden}
-#store{visibility:visible}
+#store{visibility:hidden}
+#mainPage{visibility:visible}
 .pics {width: 70px; height: 70px}
 .inventoryItem {padding-right:5px; padding-bottom: 5px;}
 #storageInventory {position: absolute; z-index:3;   padding-top: 30px; padding-left: 210px;}
@@ -11,7 +12,7 @@
 .inventoryPics {width: 65px; height: 65px}
 .menu {width: 50px; height: 53px}
 .breeze{height:70px; width:80px}
-body{margin:0;padding:0;}
+body{margin:0;padding:0; }
 #header{background-color:#000000;color:#F3F3F3;width:800px;height:50px;color:#1eb2cc;visibility:visible;}
 .main{float:left;}
 .right{height:427px;background-color:#FFA61B;width:150px; float:left;}
@@ -39,6 +40,7 @@ text-shadow:   1px 1px #000000;
 #freezerLabel{margin-left:100px;margin-top:160px; position: absolute; padding-top: 10px; z-index: 8;background-color:#170ab4;padding-left:20px; padding-right:20px;font-size:25px}
 #shelfLabel{margin-left:100px;margin-top:308px; position: absolute; padding-top: 10px; z-index: 8;background-color:#7d4b09;padding-left:26px;padding-right:26px;font-size:25px}
 .ico{padding-bottom:10px; padding-left: 10px}
+.mIco{margin-left: 10px; }
 .butin{padding-top:10px; padding-left: 5px}
 
 .oko{width: 90px;border: 3px solid black}
@@ -46,6 +48,7 @@ text-shadow:   1px 1px #000000;
 .1stcol{padding-left: 30px}
 
 #man{padding-left:85px; position: absolute; padding-top: 30px; z-index: 8;}#can{background-image:url(image/home_background.jpg);background-repeat:no-repeat; background-size: 800px 500px}
+#pet{padding-left:185px; position: absolute; padding-top: 30px; z-index: 8;}#can{background-image:url(image/home_background.jpg);background-repeat:no-repeat; background-size: 800px 500px}
 #hey{background:    #d9ead3;
 background:    -webkit-linear-gradient(#4c1130, #d9ead3 50%, #4c1130);
 background:    linear-gradient(#4c1130, #d9ead3 50%, #4c1130);

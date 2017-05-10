@@ -107,12 +107,14 @@ document.write("hello");
    	};
 	
 	function openStore() {
+		document.getElementById('mainPage').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'hidden';
 	document.getElementById('store').style.visibility = 'visible';
 
      
 };
 	function openInventory() {
+		document.getElementById('mainPage').style.visibility = 'hidden';
 document.getElementById('store').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'visible';
 	};
@@ -150,14 +152,4 @@ document.getElementById('sInventory').style.visibility = 'visible';
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+

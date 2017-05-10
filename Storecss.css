@@ -1,10 +1,10 @@
 
-#Inventory {position: absolute; z-index:3;   padding-top: 30px; padding-left: 306px;}
+#Inventory {position: absolute; z-index:3;   padding-top: 65px; padding-left: 309px;}
 #Inventory td, th {padding:20px; }
 .storeItem {padding-right:10px; padding-bottom: 10px;}
 #sInventory{visibility:hidden}
 #store{visibility:visible}
-.pics {width: 70px; height: 70px}
+.pics {width: 80px; height: 80px}
 .inventoryItem {padding-right:5px; padding-bottom: 5px;}
 #storageInventory {position: absolute; z-index:3;   padding-top: 30px; padding-left: 210px;}
 #storageInventory td, th {padding:10px; }
@@ -28,11 +28,11 @@ font:          normal 400 13px/1 "Pacifico", cursive;
 text-align:    center;
 text-shadow:   1px 1px #000000;
 }
-#noah{background-color: #ed8700; width:20px; height: 20px;position: absolute; padding-left: 400px; padding-top:350px;margin-left: 300px;margin-top:20px}
-#noah1{background-color: #ed8700; width:20px; height: 20px;position: absolute; padding-left: 550px; padding-top:235px;margin-left: 210px;margin-top:225px;border: 3px solid black}
+#noah{background-color: #ed8700; width:20px; height: 20px;position: absolute; padding-left: 500px; padding-top:450px;margin-left: 270px;margin-top:20px}
+#noah1{background-color: #ed8700; width:20px; height: 20px;position: absolute; padding-left: 550px; padding-top:235px;margin-left: 210px;margin-top:235px;border: 3px solid black}
 #fridge{background-color: blue; width:20px; height: 20px;position: absolute; padding-left: 550px; padding-top:80px;margin-left: 210px;margin-top:130px;border: 3px solid black}
 #freezer{background-color: white; width:20px; height: 20px;position: absolute; padding-left: 550px; padding-top:80px;margin-left: 210px;margin-top:30px; border: 3px solid black}
-#total{margin-left:300px;margin-top:330px;position:absolute;font-size:24px; background-color: #951919;padding: 5px 50px 3px 7px;height: 33px; color:yellow;border: 3px solid black}
+#total{margin-left:330px;margin-top:400px;position:absolute;font-size:24px; background-color: #951919;padding: 5px 50px 3px 7px;height: 33px; color:yellow;border: 3px solid black}
 #can2{position:absolute}
 #Icons {padding-top:10px;position:absolute;z-index:10}
 #fridgeLabel{margin-left:100px;margin-top:70px; position: absolute; padding-top: 10px; z-index: 8;background-color:#00d1ff;padding-left:15px; padding-right:15px;font-size:25px}
@@ -41,8 +41,8 @@ text-shadow:   1px 1px #000000;
 .ico{padding-bottom:10px; padding-left: 10px}
 .butin{padding-top:10px; padding-left: 5px}
 
-.oko{width: 90px;border: 3px solid black}
-
+.oko{width: 90px;height:80px;border: 3px solid black}
+.oko2{width: 100px;border: 3px solid black}
 .1stcol{padding-left: 30px}
 
 #man{padding-left:85px; position: absolute; padding-top: 30px; z-index: 8;}#can{background-image:url(image/home_background.jpg);background-repeat:no-repeat; background-size: 800px 500px}
@@ -58,8 +58,8 @@ font:          normal 400 13px/1 "Pacifico", cursive;
 text-align:    center;
 text-shadow:   1px 1px #000000;
 position: absolute;
-margin-left:530px;
-margin-top:334px;
+margin-left:560px;
+margin-top:404px;
 }
 #heyo{background:    #d9ead3;
 background:    -webkit-linear-gradient(#4c1130, #d9ead3 50%, #4c1130);
@@ -72,8 +72,8 @@ display:       inline-block;
 font:          normal 400 13px/1 "Pacifico", cursive;
 text-align:    center;
 text-shadow:   1px 1px #000000;
-margin-left:610px;
-margin-top:334px;
+margin-left:640px;
+margin-top:404px;
 position:absolute;
 }
 
@@ -89,6 +89,6 @@ font:          normal 400 13px/1 "Pacifico", cursive;
 text-align:    center;
 text-shadow:   1px 1px #000000;
 margin-left:700px;
-margin-top:424px;
+margin-top:440px;
 position:absolute;
 }

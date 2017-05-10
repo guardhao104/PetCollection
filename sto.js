@@ -9,7 +9,10 @@ document.write("hello");
 	var apple = 0;
 	var yogurt = 0;
 	var chicken = 0;
-	
+	d = 0;
+	var yo = "slot";
+	var omg;
+	var items = banana+bread+steak+apple+yogurt+chicken;
 	
 	var cost=0;
 	var appleCost = 65;
@@ -72,6 +75,49 @@ document.write("hello");
 	document.getElementById("10").innerHTML = cost;
 	};
 	
+	
+	
+	
+	
+	
+	
+	function item() {
+		
+		for(i=1; i<apple; i++){
+			numtoString();
+			}
+		
+		
+	};
+	
+	
+	m =0;
+	
+	
+	function numtoString() {
+	while(d<apple){
+		d++;
+		omg = yo+d;
+	var hello = document.getElementById(omg);
+	if(hello.getAttribute("src") == " ") {
+		document.getElementById(omg).src = "image/Apple.png";
+	}
+}
+	
+	while(d<chicken){
+		d++;
+		omg = yo+d;
+	var hello = document.getElementById(omg);
+	if(hello.getAttribute("src") == " ") {
+		document.getElementById(omg).src = "image/WaterMelonLarge.png"
+	}
+	}
+	};
+
+	
+	
+	
+	
 	function attemptBuy() {
 	if(cost>money) {
 	alert("Were sorry you do not have enough money");
@@ -79,25 +125,12 @@ document.write("hello");
 	document.getElementById("10").innerHTML = cost;
 	document.getElementById("11").innerHTML = money;
 	} else {
-	alert("Thank you for your purchase");
+alert("Thank you for your purchase");
 	money -= cost;
+	numtoString();
 	cost=0;
 	document.getElementById("10").innerHTML = cost;
 	document.getElementById("11").innerHTML = money;
-	if(apple == 1) {
-			document.getElementById("slot1").src = "image/Apple.png";
-			
-			}
-	else if(apple == 2) {
-			document.getElementById("slot1").src = "image/Apple.png";
-			document.getElementById("slot2").src = "image/Apple.png";
-			
-	}
-	else if(apple == 3) {
-			document.getElementById("slot1").src = "image/Apple.png";
-			document.getElementById("slot2").src = "image/Apple.png";
-			document.getElementById("slot3").src = "image/Apple.png";
-	}
 	}
 	};
 	
@@ -107,35 +140,20 @@ document.write("hello");
    	};
 	
 	function openStore() {
-		document.getElementById('mainPage').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'hidden';
 	document.getElementById('store').style.visibility = 'visible';
 
      
 };
 	function openInventory() {
-		document.getElementById('mainPage').style.visibility = 'hidden';
+		
 document.getElementById('store').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'visible';
 	};
-		
-		
-	function addCart() {
-		var d = 1;
-	while(document.getElementById("slot"+d).src != "") {
-		d++;
-		}
-		document.getElementById("slot"+d).src = "image/Apple.png";
-		
-	}
 	
 	
-	function item() {
 		
-		
-		
-		
-	}
+	
 		
 		
 		

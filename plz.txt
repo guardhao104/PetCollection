@@ -1,0 +1,392 @@
+if(milkArray.includes(num) && document.getElementById("store1").src != milkimg) {
+		document.getElementById("store2").src =milkimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		if(butterArray.includes(num) && document.getElementById("store1").src != butterimg) {
+		document.getElementById("store2").src =butterimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(creamArray.includes(num) && document.getElementById("store1").src != creamimg) {
+		document.getElementById("store2").src =creamimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(eggArray.includes(num) && document.getElementById("store1").src != eggimg) {
+		document.getElementById("store2").src =eggimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(bananaArray.includes(num) && document.getElementById("store1").src != bananaimg) {
+		document.getElementById("store2").src =bananaimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(appleArray.includes(num) && document.getElementById("store1").src != appleimg) {
+		document.getElementById("store2").src =appleimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(strawberryArray.includes(num) && document.getElementById("store1").src != strawberryimg) {
+		document.getElementById("store2").src =strawberryimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(onionArray.includes(num) && document.getElementById("store1").src != onionimg) {
+		document.getElementById("store2").src =onionimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(garlicArray.includes(num) && document.getElementById("store1").src != garlicimg) {
+		document.getElementById("store2").src =garlicimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(pepperArray.includes(num) && document.getElementById("store1").src != pepperimg) {
+		document.getElementById("store2").src = pepperimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(chocolateArray.includes(num) && document.getElementById("store1").src != chocolateimg) {
+		document.getElementById("store2").src =chocolateimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(saltArray.includes(num) && document.getElementById("store1").src != saltimg) {
+		document.getElementById("store2").src =saltimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(flourArray.includes(num) && document.getElementById("store1").src != flourimg) {
+		document.getElementById("store2").src =flourimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		num = Math.floor((Math.random() * 100) + 1);
+		
+		if(milkArray.includes(num) && document.getElementById("store1").src != milkimg && document.getElementById("store2").src != milkimg) {
+		document.getElementById("store3").src =milkimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(butterArray.includes(num) && document.getElementById("store1").src != butterimg && document.getElementById("store2").src != butterimg) {
+		document.getElementById("store3").src =butterimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(creamArray.includes(num) && document.getElementById("store1").src != creamimg && document.getElementById("store2").src != creamimg) {
+		document.getElementById("store3").src =creamimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(eggArray.includes(num) && document.getElementById("store1").src != eggimg && document.getElementById("store2").src != eggimg) {
+		document.getElementById("store3").src =eggimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(bananaArray.includes(num) && document.getElementById("store1").src != bananaimg && document.getElementById("store2").src != bananaimg) {
+		document.getElementById("store3").src =bananaimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(appleArray.includes(num) && document.getElementById("store1").src != appleimg && document.getElementById("store2").src != appleimg) {
+		document.getElementById("store3").src =appleimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(strawberryArray.includes(num) && document.getElementById("store1").src != strawberryimg && document.getElementById("store2").src != strawberryimg) {
+		document.getElementById("store3").src =strawberryimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(onionArray.includes(num) && document.getElementById("store1").src != onionimg && document.getElementById("store2").src != onionimg) {
+		document.getElementById("store3").src =onionimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(garlicArray.includes(num) && document.getElementById("store1").src != garlicimg && document.getElementById("store2").src != garlicimg) {
+		document.getElementById("store3").src =garlicimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(pepperArray.includes(num) && document.getElementById("store1").src != pepperimg && document.getElementById("store2").src != pepperimg) {
+		document.getElementById("store3").src = pepperimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(chocolateArray.includes(num) && document.getElementById("store1").src != chocolateimg && document.getElementById("store2").src != chocolateimg) {
+		document.getElementById("store3").src =chocolateimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(saltArray.includes(num) && document.getElementById("store1").src != saltimg && document.getElementById("store2").src != saltimg) {
+		document.getElementById("store3").src =saltimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(flourArray.includes(num) && document.getElementById("store1").src != flourimg && document.getElementById("store2").src != flourimg) {
+		document.getElementById("store3").src =flourimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		num = Math.floor((Math.random() * 100) + 1);
+		if(milkArray.includes(num) && document.getElementById("store1").src != milkimg && document.getElementById("store2").src != milkimg && document.getElementById("store3").src != milkimg) {
+		document.getElementById("store4").src =milkimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(butterArray.includes(num) && document.getElementById("store1").src != butterimg && document.getElementById("store2").src != butterimg && document.getElementById("store3").src != butterimg) {
+		document.getElementById("store4").src =butterimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(creamArray.includes(num) && document.getElementById("store1").src != creamimg && document.getElementById("store2").src != creamimg && document.getElementById("store3").src != creamimg) {
+		document.getElementById("store4").src =creamimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(eggArray.includes(num) && document.getElementById("store1").src != eggimg && document.getElementById("store2").src != eggimg && document.getElementById("store3").src != eggimg) {
+		document.getElementById("store4").src =eggimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(bananaArray.includes(num) && document.getElementById("store1").src != bananaimg && document.getElementById("store2").src != bananaimg && document.getElementById("store3").src != bananaimg) {
+		document.getElementById("store4").src =bananaimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(appleArray.includes(num) && document.getElementById("store1").src != appleimg && document.getElementById("store2").src != appleimg && document.getElementById("store3").src != appleimg) {
+		document.getElementById("store4").src =appleimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(strawberryArray.includes(num) && document.getElementById("store1").src != strawberryimg && document.getElementById("store2").src != strawberryimg && document.getElementById("store3").src != strawberryimg) {
+		document.getElementById("store4").src =strawberryimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(onionArray.includes(num) && document.getElementById("store1").src != onionimg && document.getElementById("store2").src != onionimg && document.getElementById("store3").src != onionimg) {
+		document.getElementById("store4").src =onionimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(garlicArray.includes(num) && document.getElementById("store1").src != garlicimg && document.getElementById("store2").src != garlicimg && document.getElementById("store3").src != garlicimg) {
+		document.getElementById("store4").src =garlicimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(pepperArray.includes(num) && document.getElementById("store1").src != pepperimg && document.getElementById("store2").src != pepperimg && document.getElementById("store3").src != pepperimg) {
+		document.getElementById("store4").src = pepperimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(chocolateArray.includes(num) && document.getElementById("store1").src != chocolateimg && document.getElementById("store2").src != chocolateimg && document.getElementById("store3").src != chocolateimg) {
+		document.getElementById("store4").src =chocolateimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(saltArray.includes(num) && document.getElementById("store1").src != saltimg && document.getElementById("store2").src != saltimg && document.getElementById("store3").src != saltimg) {
+		document.getElementById("store4").src =saltimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(flourArray.includes(num) && document.getElementById("store1").src != flourimg && document.getElementById("store2").src != flourimg && document.getElementById("store3").src != flourimg) {
+		document.getElementById("store4").src =flourimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		num = Math.floor((Math.random() * 100) + 1);
+		
+		if(milkArray.includes(num) && document.getElementById("store1").src != milkimg && document.getElementById("store2").src != milkimg && document.getElementById("store3").src != milkimg && document.getElementById("store4").src != milkimg) {
+		document.getElementById("store5").src =milkimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(butterArray.includes(num) && document.getElementById("store1").src != butterimg && document.getElementById("store2").src != butterimg && document.getElementById("store3").src != butterimg && document.getElementById("store4").src != butterimg ) {
+		document.getElementById("store5").src =butterimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(creamArray.includes(num) && document.getElementById("store1").src != creamimg && document.getElementById("store2").src != creamimg && document.getElementById("store3").src != creamimg && document.getElementById("store4").src != creamimg) {
+		document.getElementById("store5").src =creamimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(eggArray.includes(num) && document.getElementById("store1").src != eggimg && document.getElementById("store2").src != eggimg && document.getElementById("store3").src != eggimg && document.getElementById("store4").src != eggimg) {
+		document.getElementById("store5").src =eggimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(bananaArray.includes(num) && document.getElementById("store1").src != bananaimg && document.getElementById("store2").src != bananaimg && document.getElementById("store3").src != bananaimg && document.getElementById("store4").src != bananaimg) {
+		document.getElementById("store5").src =bananaimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(appleArray.includes(num) && document.getElementById("store1").src != appleimg && document.getElementById("store2").src != appleimg && document.getElementById("store3").src != appleimg && document.getElementById("store4").src != appleimg) {
+		document.getElementById("store5").src =appleimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(strawberryArray.includes(num) && document.getElementById("store1").src != strawberryimg && document.getElementById("store2").src != strawberryimg && document.getElementById("store3").src != strawberryimg && document.getElementById("store4").src != strawberryimg) {
+		document.getElementById("store5").src =strawberryimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(onionArray.includes(num) && document.getElementById("store1").src != onionimg && document.getElementById("store2").src != onionimg && document.getElementById("store3").src != onionimg && document.getElementById("store4").src != onionimg) {
+		document.getElementById("store5").src =onionimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(garlicArray.includes(num) && document.getElementById("store1").src != garlicimg && document.getElementById("store2").src != garlicimg && document.getElementById("store3").src != garlicimg && document.getElementById("store4").src != garlicimg) {
+		document.getElementById("store5").src =garlicimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(pepperArray.includes(num) && document.getElementById("store1").src != pepperimg && document.getElementById("store2").src != pepperimg && document.getElementById("store3").src != pepperimg && document.getElementById("store4").src != pepperimg) {
+		document.getElementById("store5").src = pepperimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(chocolateArray.includes(num) && document.getElementById("store1").src != chocolateimg && document.getElementById("store2").src != chocolateimg && document.getElementById("store3").src != chocolateimg && document.getElementById("store4").src != chocolateimg) {
+		document.getElementById("store5").src =chocolateimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(saltArray.includes(num) && document.getElementById("store1").src != saltimg && document.getElementById("store2").src != saltimg && document.getElementById("store3").src != saltimg && document.getElementById("store4").src != saltimg) {
+		document.getElementById("store5").src =saltimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(flourArray.includes(num) && document.getElementById("store1").src != flourimg && document.getElementById("store2").src != flourimg && document.getElementById("store3").src != flourimg && document.getElementById("store4").src != flourimg) {
+		document.getElementById("store5").src =flourimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		num = Math.floor((Math.random() * 100) + 1);
+		
+		if(milkArray.includes(num) && document.getElementById("store1").src != milkimg && document.getElementById("store2").src != milkimg && document.getElementById("store3").src != milkimg && document.getElementById("store4").src != milkimg && document.getElementById("store5").src != milkimg) {
+		document.getElementById("store6").src =milkimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(butterArray.includes(num) && document.getElementById("store1").src != butterimg && document.getElementById("store2").src != butterimg && document.getElementById("store3").src != butterimg && document.getElementById("store4").src != butterimg && document.getElementById("store5").src != butterimg) ) {
+		document.getElementById("store6").src =butterimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(creamArray.includes(num) && document.getElementById("store1").src != creamimg && document.getElementById("store2").src != creamimg && document.getElementById("store3").src != creamimg && document.getElementById("store4").src != creamimg && document.getElementById("store5").src != creamimg) {
+		document.getElementById("store6").src =creamimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(eggArray.includes(num) && document.getElementById("store1").src != eggimg && document.getElementById("store2").src != eggimg && document.getElementById("store3").src != eggimg && document.getElementById("store4").src != eggimg && document.getElementById("store5").src != eggimg) {
+		document.getElementById("store6").src =eggimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(bananaArray.includes(num) && document.getElementById("store1").src != bananaimg && document.getElementById("store2").src != bananaimg && document.getElementById("store3").src != bananaimg && document.getElementById("store4").src != bananaimg && document.getElementById("store5").src != bananaimg) {
+		document.getElementById("store6").src =bananaimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(appleArray.includes(num) && document.getElementById("store1").src != appleimg && document.getElementById("store2").src != appleimg && document.getElementById("store3").src != appleimg && document.getElementById("store4").src != appleimg && document.getElementById("store5").src != appleimg) {
+		document.getElementById("store6").src =appleimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(strawberryArray.includes(num) && document.getElementById("store1").src != strawberryimg && document.getElementById("store2").src != strawberryimg && document.getElementById("store3").src != strawberryimg && document.getElementById("store4").src != strawberryimg && document.getElementById("store5").src != strawberryimg) {
+		document.getElementById("store6").src =strawberryimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(onionArray.includes(num) && document.getElementById("store1").src != onionimg && document.getElementById("store2").src != onionimg && document.getElementById("store3").src != onionimg && document.getElementById("store4").src != onionimg && document.getElementById("store5").src != onionimg) {
+		document.getElementById("store6").src =onionimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(garlicArray.includes(num) && document.getElementById("store1").src != garlicimg && document.getElementById("store2").src != garlicimg && document.getElementById("store3").src != garlicimg && document.getElementById("store4").src != garlicimg && document.getElementById("store5").src != garlicimg) {
+		document.getElementById("store6").src =garlicimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(pepperArray.includes(num) && document.getElementById("store1").src != pepperimg && document.getElementById("store2").src != pepperimg && document.getElementById("store3").src != pepperimg && document.getElementById("store4").src != pepperimg && document.getElementById("store5").src != pepperimg) {
+		document.getElementById("store6").src = pepperimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(chocolateArray.includes(num) && document.getElementById("store1").src != chocolateimg && document.getElementById("store2").src != chocolateimg && document.getElementById("store3").src != chocolateimg && document.getElementById("store4").src != chocolateimg && document.getElementById("store5").src != chocolateimg) {
+		document.getElementById("store6").src =chocolateimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(saltArray.includes(num) && document.getElementById("store1").src != saltimg && document.getElementById("store2").src != saltimg && document.getElementById("store3").src != saltimg && document.getElementById("store4").src != saltimg && document.getElementById("store5").src != saltimg) {
+		document.getElementById("store6").src =saltimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+		
+		if(flourArray.includes(num) && document.getElementById("store1").src != flourimg && document.getElementById("store2").src != flourimg && document.getElementById("store3").src != flourimg && document.getElementById("store4").src != flourimg && document.getElementById("store5").src != flourimg) {
+		document.getElementById("store6").src =flourimg;
+		} else {
+		num = Math.floor((Math.random() * 100) + 1);		
+		}
+	};

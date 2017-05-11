@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>Monster Collection</title>
 		<script src="sto.js"></script>
 		<link rel="stylesheet" type="text/css" href="Storecss.css">
@@ -21,7 +21,7 @@
 		
 
 	<div id="header">
-		<h1>Day 1        $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
+		<h1>Day<span id="12"></span>         $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
 	</div>
 	<div class="main">
@@ -36,26 +36,26 @@
          <td  class="ico"><button onclick="numtoString()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
          </tr>
 	     <tr>
-		 <td  class="ico"><button onclick="addMilk()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
+		 <td  class="ico"><button onclick="helloy()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
          </tr>
 	     <tr>
-         <td  class="ico"><button onclick="addMilk()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
+         <td  class="ico"><button onclick="nextDay()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
          </tr>
 	     </table>
 		
 		
 		
 		<div id="store">
-		<span id="man"><img src="image/Agent.png" height="400" width="200"></span>
-		 <table id="Inventory">
+		<span id="man"><img src="image/Agent.png" height="500" width="300"></span>
+		 <table id="storeInventory">
          <tr>
-         <td class="storeItem"> <button onclick="addApples()" class="oko2"><span class="butin">Price: 65$</span><img src="image/coffee1.png" class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addChicken()" class="oko2"><span class="butin">Price: 33$</span><img src="image/crab_meat.png" class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addBanana()"class="oko2"><span class="butin">Price: 16$</span><img src="image/honeybun1.png" class="pics"></button><br>  </td>      </tr>
+         <td class="storeItem"> <button onclick="addApples()" class="oko2"><span class="butin">Price: 65$ x2</span><img src="image/butter3.jpg"class="pics"></button><br></td>
+         <td class="storeItem"> <button onclick="addChicken()" class="oko2"><span class="butin">Price: 33$ x7</span><img src="image/banana.png"class="pics"></button><br></td>
+         <td class="storeItem"> <button onclick="addBanana()"class="oko2"><span class="butin">Price: 16$ x3</span><img src="image/choco.png" class="pics"></button><br>  </td>      </tr>
 		 <tr>
-         <td class="storeItem"> <button onclick="addBread()" class="oko2"><span class="butin">Price: 10$</span><img src="image/pancakes1.png" class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addSteak()" class="oko2"><span class="butin">Price: 5$</span><img src="image/Apple.png" class="pics"></button> <br> </td>
-         <td class="storeItem"> <button onclick="addYogurt()"class="oko2"><span class="butin">Price: 20$</span><img src="image/WaterMelonLarge.png" class="pics"></button><br>  </td>
+         <td class="storeItem"> <button onclick="addBread()" class="oko2"><span class="butin">Price: 10$ x4</span><img src="image/egg.png" class="pics"></button><br></td>
+         <td class="storeItem"> <button onclick="addSteak()" class="oko2"><span class="butin">Price: 5$ x1</span><img src="image/garlic2.jpg" class="pics"></button> <br> </td>
+         <td class="storeItem"> <button onclick="addYogurt()"class="oko2"><span class="butin">Price: 20$ x6</span><img src="image/pepper.jpg" class="pics"></button><br>  </td>
 	     </tr>
          </table>
 	
@@ -63,44 +63,44 @@
 	
 	
 	
-	<div id="noah">
+	<div id="storeBackground">
     </div>
 	<div id="total"> 
          Total price:<span id="10"></span>
 	</div>	
-	<button id="hey" onclick="attemptBuy()">Buy</button>
-	<button id="heyo" onclick ="removeAll()">Remove</button>
+	<button id="buyButton" onclick="attemptBuy();" >Buy</button>
+	<button id="removeButton" onclick ="removeAll()">Remove</button>
 	</div>
 	
 	<div id="sInventory">
 <table id="storageInventory">
         <tr>
-        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot20"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot19"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot18" ></button><br>  </td>      
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src= " " class="inventoryPics" id="slot17"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot16"></button><br></td>		
+        <td class="inventoryItem" id="asdf20"> <button onclick="addApples()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot20"></button><br></td>
+        <td class="inventoryItem" id="asdf19"> <button onclick="addChicken()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot19"></button><br></td>
+		<td class="inventoryItem" id="asdf18"> <button onclick="addBanana()"class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)"ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot18" ></button><br>  </td>      
+		<td class="inventoryItem" id="asdf17"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src= " "ondragstart="drag(event)" ondrop="drop(event)"ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot17"></button><br></td>
+		<td class="inventoryItem" id="asdf16"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)" ondrop="drop(event)"  ondragover="allowDrop(event)" draggable="true"class="inventoryPics" id="slot16"></button><br></td>		
 		</tr>
 		<tr>
-        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot15"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot14"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot13"></button><br>  </td>      
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot12"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot11"></button><br></td>		
+        <td class="inventoryItem" id="asdf15"> <button onclick="addApples()" class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot15"></button><br></td>
+        <td class="inventoryItem" id="asdf14"> <button onclick="addChicken()" class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot14"></button><br></td>
+		<td class="inventoryItem" id="asdf13"> <button onclick="addBanana()"class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot13"></button><br>  </td>      
+		<td class="inventoryItem" id="asdf12"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot12"></button><br></td>
+		<td class="inventoryItem" id="asdf11"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot11"></button><br></td>		
 		</tr>		
 		<tr>
-        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot10"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot9"></button> <br> </td>
-        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot8"></button><br>  </td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot7"></button><br></td>	 
-	    <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot6"></button><br></td>
+        <td class="inventoryItem" id="asdf10"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot10"></button><br></td>
+        <td class="inventoryItem" id="asdf9"> <button onclick="addSteak()" class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot9"></button> <br> </td>
+        <td class="inventoryItem" id="asdf8"> <button onclick="addYogurt()"class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot8"></button><br>  </td>
+		<td class="inventoryItem" id="asdf7"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot7"></button><br></td>	 
+	    <td class="inventoryItem" id="asdf6"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot6"></button><br></td>
 	    </tr>
 	    <tr>
-        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot5"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot4"></button><br></td>		
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot3"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot2"></button> <br> </td>
-        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src=" " class="inventoryPics" id="slot1"></button><br>  </td>
+        <td class="inventoryItem" id="asdf5"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot5"></button><br></td>
+		<td class="inventoryItem" id="asdf4"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot4"></button><br></td>		
+		<td class="inventoryItem" id="asdf3"> <button onclick="addBread()" class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot3"></button><br></td>
+        <td class="inventoryItem" id="asdf2"> <button onclick="addSteak()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot2"></button> <br> </td>
+        <td class="inventoryItem" id="asdf1" ondrop="drop(event)" ondragover="allowDrop(event)"> <button onclick="addYogurt()"class="storageButton"><span class="butin"></span><img src=" "ondragstart="drag(event)"  ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot1"></button><br>  </td>
 	    </tr>        
 		</table>
 	<div id="fridgeLabel">
@@ -115,17 +115,17 @@
 	
 	
 	
-	<div id="freezer">
+	<div id="freezerBackground">
 	
 	</div>
-	<div id="fridge">
+	<div id="fridgeBackground">
 	
 	</div>
-	<div id="noah1">
+	<div id="shelfBackground">
 
 	
 	</div>
-	<button id="heyoo" onclick ="removeAll()">Cancel</button>
+	<button id="cancelButton" onclick ="removeAll()">Cancel</button>
 	</div>
 	
 	

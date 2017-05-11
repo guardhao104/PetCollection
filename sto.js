@@ -122,6 +122,7 @@
 	d++;
 	omg = yo+d;
 	hello = document.getElementById(omg);
+<<<<<<< HEAD
 	if(hello.getAttribute("src") == " ") {
 		document.getElementById(omg).src = "image/pancakes1.png";
 	}
@@ -141,6 +142,27 @@
 	omg = yo+d;
 	hello = document.getElementById(omg);
 	if(hello.getAttribute("src") == " ") {
+=======
+	if(hello.getAttribute("src") == " ") {
+		document.getElementById(omg).src = "image/pancakes1.png";
+	}
+	}
+	m=d
+	while(d<steak+m){
+	d++;
+	omg = yo+d;
+	hello = document.getElementById(omg);
+	if(hello.getAttribute("src") == " ") {
+		document.getElementById(omg).src = "image/honeybun1.png";
+	}
+	}
+	m=d
+	while(d<banana+m){
+	d++;
+	omg = yo+d;
+	hello = document.getElementById(omg);
+	if(hello.getAttribute("src") == " ") {
+>>>>>>> origin/Noah
 		document.getElementById(omg).src = "image/crab_meat.png";
 	}
 	}
@@ -210,6 +232,7 @@ function drop(ev) {
 	function divtoimg() {
 		var child1 = document.getElementById('slot1');
 			child1.parentNode.removeChild(child1);
+<<<<<<< HEAD
 	};
 		var day = 1;
 	function nextDay() {
@@ -375,9 +398,32 @@ function drop(ev) {
 		num = Math.floor((Math.random() * 100) + 1);		
 		}
 	
+=======
+>>>>>>> origin/Noah
 	};
+		var day = 1;
+	function nextDay() {
+		day++;
+		document.getElementById("12").innerHTML = day;
+		};
+	function changeStore() {
+		"image/banana.png"
+		"image/pepper.jpg"
+		"image/strawberry.png"
+		"image/milk2.png"
+		"image/onion.png"
+		"image/choco.png"
+		"image/garlic2.jpg"
+		"image/egg.png"
+		"image/salt3.jpg"
+		"image/cream2.png"
+		"image/flour2.jpg"
+		"image/butter3.jpg"
+		"image/apple.png"
+	}
 	
 	
+<<<<<<< HEAD
 		
 		
 		
@@ -386,6 +432,14 @@ function drop(ev) {
 		
 		
 		
+=======
+	
+	m = 0;
+	d = 0;
+	yo = "slot";
+	omg = yo+d;
+	foo;
+>>>>>>> origin/Noah
 	
 	
 	bananaimg = "image/banana.png";

@@ -1,223 +1,192 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Monster Collection</title>
-		<script src="sto.js"></script>
-		<link rel="stylesheet" type="text/css" href="Storecss.css">
-		
-		<style>
-		
-		</style>
-	</head>
-  
-  
-	
-	<script>
-	
-	</script>
-	
-	
-	
-		
-	
-	<body onload="urMoney()">
-	
-		
-
-	<div id="header">
-		<h1 ><button class="mIco" onclick="back()" >Main<br><img src="image/coffee1.png" height="10" width="10" ></button>&nbsp;&nbsp;&nbsp;&nbsp;Day <b id ="day">1 </b>       $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
-	</div>
-	<div class="main">
-		<!-- main page　-->
-		<div id ="mainPage">
-		<span id="pet"><img src="image/hamster.png" height="400" width="400"></span>
-		</div>
-		<!-- side bar -->
-		<table id="Icons">
-         <tr>
-         <td class="ico"> <button onclick="openStore()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
-         </tr>
-		 <tr>
-         <td class="ico"> <button onclick="openInventory()" class="breeze">Storage<img src="image/pancakes1.png" class="menu"></button><br></td>
-         </tr>
-         <tr>
-         <td  class="ico"><button onclick="addMilk()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
-         </tr>
-	     <tr>
-		 <td  class="ico"><button onclick="addMilk()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
-         </tr>
-	     <tr>
-         <td  class="ico"><button onclick="gotoNextDay()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
-         </tr>
-	     </table>
-		 <!-- store page -->
-		<div id="store">
-		<span id="man"><img src="image/Agent.png" height="400" width="200"></span>
-		 <table id="Inventory">
-         <tr>
-         <td class="storeItem"> <button onclick="addApples()" class="oko"><span class="butin">Price: 65$</span><img src="image/coffee1.png" class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addChicken()" class="oko"><span class="butin">Price: 33$</span><img src="image/crab_meat.png" class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addBanana()"class="oko"><span class="butin">Price: 16$</span><img src="image/honeybun1.png" class="pics"></button><br>  </td>      </tr>
-		 <tr>
-         <td class="storeItem"> <button onclick="addBread()" class="oko"><span class="butin">Price: 10$</span><img src="image/pancakes1.png" class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addSteak()" class="oko"><span class="butin">Price: 5$</span><img src="image/Apple.png" class="pics"></button> <br> </td>
-         <td class="storeItem"> <button onclick="addYogurt()"class="oko"><span class="butin">Price: 20$</span><img src="image/WaterMelonLarge.png" class="pics"></button><br>  </td>
-	     </tr>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Monster Collection</title>
+      <script src="sto.js"></script>
+      <link rel="stylesheet" type="text/css" href="Storecss.css">
+      <style>
+      </style>
+   </head>
+   <script></script>
+   <body onload="urMoney()">
+      <div id="header">
+         <h1 ><button class="mIco" onclick="back()" >Main<br><img src="image/coffee1.png" height="10" width="10" ></button>&nbsp;&nbsp;&nbsp;&nbsp;Day <span id ="day">1</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
+         </h1>
+      </div>
+      <div class="main">
+         <!--loading page-->
+         <div id ="loading">
+         </div>
+         <!-- main page　-->
+         <div id ="mainPage">
+            <span id="pet"><img src="image/hamster.png" height="500" width="500"></span>
+         </div>
+         <!-- side bar -->
+         <table id="Icons">
+            <tr>
+               <td class="ico"> <button onclick="openStore()" class="breeze">Store<img src="image/coffee1.png" class="menu"></button><br></td>
+            </tr>
+            <tr>
+               <td class="ico"> <button onclick="openInventory()" class="breeze">Storage<img src="image/pancakes1.png" class="menu"></button><br></td>
+            </tr>
+            <tr>
+               <td  class="ico"><button onclick="openFeed()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
+            </tr>
+            <tr>
+               <td  class="ico"><button onclick="addMilk()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
+            </tr>
+            <tr>
+               <td  class="ico"><button onclick="gotoNextDay()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
+            </tr>
          </table>
-	
-	
-	
-	
-	
-	<div id="noah">
-    </div>
-	<div id="total" > 
-         Total price:<span id="10"></span>
-	</div>	
-	<button id="hey" onclick="attemptBuy()">Buy</button>
-	<button id="heyo" onclick ="removeAll()">Remove</button>
-	</div>
-	
-	<!-- inventory -->
-	<div id="sInventory">
-<table id="storageInventory">
-        <tr>
-        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>      
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
-		</tr>
-		<tr>
-        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>      
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
-		</tr>		
-		<tr>
-        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
-        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>	 
-	    <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-	    </tr>
-	    <tr>
-        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
-        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
-	    </tr>        
-		</table>
-	<div id="fridgeLabel">
-	<span class="butin">Freezer</span>
-	</div>
-	<div id="freezerLabel">
-	<span class="butin">Fridge</span>
-	</div>
-	<div id="shelfLabel">
-	<span class="butin">Shelf</span>
-	</div>
-	
-	
-	
-	<div id="freezer">
-	
-	</div>
-	<div id="fridge">
-	
-	</div>
-	<div id="noah1">
-
-	
-	</div>
-	<button id="heyoo" onclick ="back()">Cancel</button>
-	</div>
-	
-	<div id="feed">
-	<table id="storageInventory">
-        <tr>
-        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>      
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
-		</tr>
-		<tr>
-        <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>      
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
-		</tr>		
-		<tr>
-        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
-        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>	 
-	    <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-	    </tr>
-	    <tr>
-        <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>		
-		<td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
-        <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
-        <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
-	    </tr>        
-		</table>
-	<div id="fridgeLabel">
-	<span class="butin">Freezer</span>
-	</div>
-	<div id="freezerLabel">
-	<span class="butin">Fridge</span>
-	</div>
-	<div id="shelfLabel">
-	<span class="butin">Shelf</span>
-	</div>
-	
-	
-	
-	<div id="freezer">
-	
-	</div>
-	<div id="fridge">
-	
-	</div>
-	<div id="noah1">
-
-	
-	</div>
-	<button id="heyoo" onclick ="back()">Cancel</button>
-	</div>
-	</div>
-	</div>
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-		
-		<script>			
-	
-	
-		
-		/*funcation onebutton(obj) {
-			if (obj.value == "Store") {
-				obj.innerHTML="Buy";
-			}
-			if (obj.value == "Buy") {
-				obj.innerHTML="Store";
-			}
-		}*/
-	    </script>
-        </body>
-        </html>
+         <!-- store page -->
+         <div id="store">
+            <span id="man"><img src="image/Agent.png" height="500" width="250"></span>
+            <table id="Inventory">
+               <tr>
+                  <td class="storeItem"> <button onclick="addApples()" class="oko"><span class="butin">Price: 65$</span><img src="image/coffee1.png" class="pics"></button><br></td>
+                  <td class="storeItem"> <button onclick="addChicken()" class="oko"><span class="butin">Price: 33$</span><img src="image/crab_meat.png" class="pics"></button><br></td>
+                  <td class="storeItem"> <button onclick="addBanana()"class="oko"><span class="butin">Price: 16$</span><img src="image/honeybun1.png" class="pics"></button><br>  </td>
+               </tr>
+               <tr>
+                  <td class="storeItem"> <button onclick="addBread()" class="oko"><span class="butin">Price: 10$</span><img src="image/pancakes1.png" class="pics"></button><br></td>
+                  <td class="storeItem"> <button onclick="addSteak()" class="oko"><span class="butin">Price: 5$</span><img src="image/Apple.png" class="pics"></button> <br> </td>
+                  <td class="storeItem"> <button onclick="addYogurt()"class="oko"><span class="butin">Price: 20$</span><img src="image/WaterMelonLarge.png" class="pics"></button><br>  </td>
+               </tr>
+            </table>
+            <div id="noah">
+            </div>
+            <div id="total" > 
+               Total price:<span id="10"></span>
+            </div>
+            <button id="hey" onclick="attemptBuy()">Buy</button>
+            <button id="heyo" onclick ="removeAll()">Remove</button>
+         </div>
+         <!-- inventory -->
+         <div id="sInventory">
+            <table id="storageInventory">
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+               </tr>
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+               </tr>
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
+                  <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+               </tr>
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
+                  <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
+               </tr>
+            </table>
+            <div id="fridgeLabel">
+               <span class="butin">Freezer</span>
+            </div>
+            <div id="freezerLabel">
+               <span class="butin">Fridge</span>
+            </div>
+            <div id="shelfLabel">
+               <span class="butin">Shelf</span>
+            </div>
+            <div id="freezer">
+            </div>
+            <div id="fridge">
+            </div>
+            <div id="shelf">
+            </div>
+            <button id="heyoo" onclick ="back()">Cancel</button>
+         </div>
+         <div id="feed">
+            <span id="man"><img src="image/Agent.png" height="500" width="250"></span>
+            <table id="storageInventory">
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+               </tr>
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addApples()" class="oko"><span class="butin"></span><img src="image/coffee1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addChicken()" class="oko"><span class="butin"></span><img src="image/crab_meat.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBanana()"class="oko"><span class="butin"></span><img src="image/honeybun1.png" class="inventoryPics"></button><br>  </td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+               </tr>
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
+                  <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+               </tr>
+               <tr>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addBread()" class="oko"><span class="butin"></span><img src="image/pancakes1.png" class="inventoryPics"></button><br></td>
+                  <td class="inventoryItem"> <button onclick="addSteak()" class="oko"><span class="butin"></span><img src="image/Apple.png" class="inventoryPics"></button> <br> </td>
+                  <td class="inventoryItem"> <button onclick="addYogurt()"class="oko"><span class="butin"></span><img src="image/WaterMelonLarge.png" class="inventoryPics"></button><br>  </td>
+               </tr>
+            </table>
+            <div id="freezer">
+            </div>
+            <div id="fridge">
+            </div>
+            <div id="noah1">
+            </div>
+            <button id="heyooo" onclick ="back()">Feed</button>
+            <button id="heyoo" onclick ="back()">Cancel</button>
+         </div>
+		 <div id ="Quiz">
+		 <span id="man"><img src="image/little_demon.png" height="500" width="250"></span>
+            <table id="Inventory">
+			   <tr>
+                  <td class="storeItem"> How much people can we feed if we don't waste food?<br></td>
+               </tr>
+               <tr>
+                  <td class="storeItem"> <input type="radio"value="yes" >A. 5million<br></td>
+               </tr>
+               <tr>
+                  <td class="storeItem"> <input type="radio"value="yes" >B. 3million<br></td>
+               </tr>
+			   <tr>
+                  <td class="storeItem"> <input type="radio"value="yes" >C. 4million<br></td>
+               </tr>
+			   <tr>
+                  <td class="storeItem"> <input type="radio"value="yes" >D. None of the above<br></td>
+               </tr>
+            </table>
+            <div id="noah">
+            </div>
+			<button id="heyoo" onclick ="back()">Submit</button>
+		 </div>
+      </div>
+      <script>			
+         /*funcation onebutton(obj) {
+         	if (obj.value == "Store") {
+         		obj.innerHTML="Buy";
+         	}
+         	if (obj.value == "Buy") {
+         		obj.innerHTML="Store";
+         	}
+         }*/
+            
+      </script>
+   </body>
+</html>

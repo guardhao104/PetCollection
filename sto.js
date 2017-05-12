@@ -77,25 +77,42 @@ var cost=0;
 		document.getElementById('mainPage').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'hidden';
 	document.getElementById('store').style.visibility = 'visible';
-
+document.getElementById('feed').style.visibility = 'hidden';
+document.getElementById('Quiz').style.visibility = 'hidden';
      
 };
 	function openInventory() {
 		document.getElementById('mainPage').style.visibility = 'hidden';
 document.getElementById('store').style.visibility = 'hidden';
 document.getElementById('sInventory').style.visibility = 'visible';
+document.getElementById('feed').style.visibility = 'hidden';
+document.getElementById('Quiz').style.visibility = 'hidden';
+	};
+	function openFeed() {
+		document.getElementById('mainPage').style.visibility = 'hidden';
+document.getElementById('store').style.visibility = 'hidden';
+document.getElementById('sInventory').style.visibility = 'hidden';
+document.getElementById('feed').style.visibility = 'visible';
+document.getElementById('Quiz').style.visibility = 'hidden';
 	};
 	var days = 1;
+	
 	function gotoNextDay(){
 	days++;
-	document.getElementById('mainPage').style.visibility = 'visible';
+	money+=200;
+	document.getElementById('mainPage').style.visibility = 'hidden';
 	document.getElementById('store').style.visibility = 'hidden';
 	document.getElementById('sInventory').style.visibility = 'hidden';
+	document.getElementById('feed').style.visibility = 'hidden';
+	document.getElementById('Quiz').style.visibility = 'visible';
 	document.getElementById("day").innerHTML = days;
+	document.getElementById("11").innerHTML = money;
 	};
 	function back(){
 	document.getElementById('mainPage').style.visibility = 'visible';
 	document.getElementById('store').style.visibility = 'hidden';
 	document.getElementById('sInventory').style.visibility = 'hidden';
+	document.getElementById('feed').style.visibility = 'hidden';
 	document.getElementById("day").innerHTML = days;
+	document.getElementById('Quiz').style.visibility = 'hidden';
 	};

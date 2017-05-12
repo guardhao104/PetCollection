@@ -841,7 +841,7 @@ function drop(ev) {
 
 
 
-		m = 0;
+	m = 0;
 	d = 0;
 	yo = "slot";
 	omg = yo+d;

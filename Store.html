@@ -10,16 +10,8 @@
 		
 		</style>
 	</head>
-  
-	
-	
-	
-		
-	
 	<body onload="urMoney()">
 	
-		
-
 	<div id="header">
 		<h1>Day<span id="12"></span>         $<span id="11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Score:0
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gold:2000</h1>
@@ -36,32 +28,27 @@
          <td  class="ico"><button onclick="numtoString()" class="breeze">Feed<img src="image/tea1.png" class="menu"></button><br></td>
          </tr>
 	     <tr>
-		 <td  class="ico"><button onclick="helloy()" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
+		 <td  class="ico"><button onclick="changeStore(); changeStore2(); changeStore3(); changeStore4(); changeStore5(); changeStore6();" class="breeze">Status<img src="image/tea1.png" class="menu"></button><br></td>
          </tr>
 	     <tr>
          <td  class="ico"><button onclick="nextDay()" class="breeze">Sleep<img src="image/tea1.png" class="menu"></button><br> </td>
          </tr>
 	     </table>
 		
-		
-		
 		<div id="store">
 		<span id="man"><img src="image/Agent.png" height="500" width="300"></span>
 		 <table id="storeInventory">
          <tr>
-         <td class="storeItem"> <button onclick="addApples()" class="oko2"><span class="butin">Price: 65$ x2</span><img src="image/butter3.jpg"class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addChicken()" class="oko2"><span class="butin">Price: 33$ x7</span><img src="image/banana.png"class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addBanana()"class="oko2"><span class="butin">Price: 16$ x3</span><img src="image/choco.png" class="pics"></button><br>  </td>      </tr>
+         <td class="storeItem"> <button onclick="addApples()" class="oko2"><span class="butin">Price: 65$ x2</span><img src=" "class="pics" id="store1"></button><br></td>
+         <td class="storeItem"> <button onclick="addChicken()" class="oko2"><span class="butin">Price: 33$ x7</span><img src=" "class="pics" id="store2"></button><br></td>
+         <td class="storeItem"> <button onclick="addBanana()"class="oko2"><span class="butin">Price: 16$ x3</span><img src="" class="pics" id="store3"></button><br>  </td>   
+		 </tr>
 		 <tr>
-         <td class="storeItem"> <button onclick="addBread()" class="oko2"><span class="butin">Price: 10$ x4</span><img src="image/egg.png" class="pics"></button><br></td>
-         <td class="storeItem"> <button onclick="addSteak()" class="oko2"><span class="butin">Price: 5$ x1</span><img src="image/garlic2.jpg" class="pics"></button> <br> </td>
-         <td class="storeItem"> <button onclick="addYogurt()"class="oko2"><span class="butin">Price: 20$ x6</span><img src="image/pepper.jpg" class="pics"></button><br>  </td>
+         <td class="storeItem"> <button onclick="addBread()" class="oko2"><span class="butin">Price: 10$ x4</span><img src=" " class="pics" id="store4"></button><br></td>
+         <td class="storeItem"> <button onclick="addSteak()" class="oko2"><span class="butin">Price: 5$ x1</span><img src=" " class="pics" id="store5"></button> <br> </td>
+         <td class="storeItem"> <button onclick="addYogurt()"class="oko2"><span class="butin">Price: 20$ x6</span><img src=" " class="pics" id="store6"></button><br>  </td>
 	     </tr>
          </table>
-	
-	
-	
-	
 	
 	<div id="storeBackground">
     </div>
@@ -73,7 +60,7 @@
 	</div>
 	
 	<div id="sInventory">
-<table id="storageInventory">
+	<table id="storageInventory">
         <tr>
         <td class="inventoryItem" id="asdf20"> <button onclick="addApples()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot20"></button><br></td>
         <td class="inventoryItem" id="asdf19"> <button onclick="addChicken()" class="storageButton"><span class="butin"></span><img src=" " ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" class="inventoryPics" id="slot19"></button><br></td>
@@ -130,30 +117,5 @@
 	
 	
 	</div>
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-		
-		<script>			
-	
-	
-		
-		/*funcation onebutton(obj) {
-			if (obj.value == "Store") {
-				obj.innerHTML="Buy";
-			}
-			if (obj.value == "Buy") {
-				obj.innerHTML="Store";
-			}
-		}*/
-	    </script>
         </body>
         </html>

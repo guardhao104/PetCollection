@@ -13,86 +13,88 @@
 				height: 100%;
 			}
 			.gamePanel{}
-			.header{
+			#header{
 				height: 70px;
 				width:100%;
 				background-color: #333333;
 			}
 			h2 {color:#ffffff;}
-			#day {float:left;margin-right:35%;}
+			#day {float:left;margin-right:35%;margin-left:30px;}
 			#score {float:left;}
-			#gold {float:right;}
-			.main{
+			#gold {float:right;margin-right:30px;}
+			#main{
 				position: relative;
 				width:100%;
-				height:550px;
+				height:80%;
 				background-image: url(./img/bedroom_background2.jpg);
 				background-repeat: no-repeat;
 				
 			}
 			.buttonModule{
-				padding: 15px 0 0 15px;
+				padding: 10px 0 0 15px;
 				float:left;
+				color: #ffffff;
 			}
 			.button{
-				padding: 10px;
-				margin: 20px;
+				padding: 5px 12px 3px 12px;
+				margin: 15px;
 				border:1px solid #ccc;
 				box-shadow: 0 0 6px #ccc;
 				border-radius: 5px;
-				background-color: rgba(28,28,28,0.5);
+				background-color: rgba(28,28,28,0.8);
 			}
 			.button img{
-				width:50px;
-				height:50px;
+				width:45px;
+				height:45px;
 			}
-			#canvas{
-				background-color: rgba(28,28,28,0.8);
-				position: absolute;
-				top: 70px;
-				right:30px;
-				width: 600px;
-				height: 400px;
-				display:none;
+			.npc{
+				height: 500px;
+				width:150px;
+				float: left:
 			}
+			#shopCanvas {
+				position:absolute;
+				top:50px;
+				right:50px;
+				border:3px solid black;
+				background-color: rgba(28,28,28,0.9);
+				visibility:hidden;
+			}
+			
 		</style>
-		<script src=".js/jquery-3.2.1.min.js"></script>
-		<script src=".js/js1.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
 	</head>
   
   <body>
   <div class="gamePanel">
-	<div class="header">
+	<div id="header">
 		<h2 id="day">Day 01</h2>
 		<h2 id="score">Score: 0</h2>
-		<h2 id="gold">Gold: 2000</h2>
+		<h2 id="gold">Gold: 1000</h2>
 	</div>
-	<div class="main">
+	<div id="main">
 		<div class="buttonModule">
-			<div class="button">
-				<img id="shop" src="./img/shop_icon.png"/>
+			<div class="button" id="shop">
+				<img src="./img/shop_icon.png"/><br/>SHOP
 			</div>
-			<div class="button">
-				<img id="storage" src="./img/storage_icon.png"/>
+			<div class="button" id="storage">
+				<img src="./img/storage_icon.png"/><br/>STORAGE
 			</div>
-			<div class="button">
-				<img id="feed" src="./img/feed_icon.png"/>
+			<div class="button" id="feed">
+				<img src="./img/feed_icon.png"/><br/>FEED
 			</div>
-			<div class="button">
-				<img id="status" src="./img/status_icon.png"/>
+			<div class="button" id="status">
+				<img src="./img/status_icon.png"/><br/>STATUS
 			</div>
-			<div class="button">
-				<img id="sleep" src="./img/sleep_icon.png"/>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="npc">
-			</div>
-			<div class="itemPanel">
-				<canvas id="canvas"></canvas>
+			<div class="button" id="sleep">
+				<img src="./img/sleep_icon.png"/><br/>SLEEP
 			</div>
 		</div>
+		<div class="npc">
+		</div>
+		<canvas id="shopCanvas" width="600" height="400"></canvas>
 	</div>
   </div>
+  <script src="js/js1.js"></script>
   </body>
  </html>

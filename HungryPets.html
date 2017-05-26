@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta property="og:url"           content="http://students.bcitdev.com/A00999595/HungryPets.html" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="Hungry Pets" />
+		<meta property="og:description"   content="A game made to educate users about food waste" />
+		<meta property="og:image"         content="https://postimg.org/image/vriye5ly7/" />
+		<title>Hungry Pets</title>
+		<style>
+			@media screen and (orientation:portrait) {
+				body{
+					transform: rotate(90deg);
+					-ms-transform:rotate(90deg); 
+					-moz-transform:rotate(90deg); 
+					-webkit-transform:rotate(90deg);
+					-o-transform:rotate(90deg);
+					height:700px;
+					width: 1200px;
+					height:100%;
+					width:100%;
+				}
+			}
+			body {
+				text-align: center;
+				background: #000000;
+				margin:0;
+			}
+			.gamePanel{
+				margin: 0 auto;
+				height:100%;
+				width:100%;
+			}
+			#header{
+				height: 60px;
+				width:100%;
+				background-color: #333333;
+			}
+			h2 {color:#ffffff;}
+			#day {float:left;margin-left:30px;}
+			#score {position:absolute;left:45%;}
+			#gold {float:right;margin-right:30px;}
+			#main{
+				position: relative;
+				width:100%;
+				height:85%;
+			}
+			#backgroundImg{
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:490px;
+			}
+			.buttonModule{
+				padding: 5px 0 0 15px;
+				position:absolute;
+				top:0;
+				left:0;
+				color: #ffffff;
+			}
+			.button{
+				padding: 5px 10px 3px 10px;
+				margin: 15px;
+				border:1px solid #ccc;
+				box-shadow: 0 0 6px #ccc;
+				border-radius: 5px;
+				background-color: rgba(28,28,28,0.8);
+			}
+			.button img{
+				width:45px;
+				height:45px;
+			}
+			.npc{
+				height: 500px;
+				width:150px;
+				float: left:
+			}
+			#playMore {
+				position: absolute;
+				right:0;
+				top:0;
+				width:130px;
+				height:auto;
+			}
+			#petImage {
+				position: absolute;
+				bottom: 30px;
+				left: 400px;
+				width: 300px;
+				height: auto;
+			}
+			#shopCanvas {
+				position:absolute;
+				top:120px;
+				right:50px;
+				border:3px solid black;
+				background-color: rgba(28,28,28,0.9);
+				display:none
+			}
+			#dailyQuiz {
+				width:600px;
+				height:400px;
+				position:absolute;
+				top:120px;
+				right:50px;
+				border:3px solid black;
+				background-color: rgba(28,28,28,0.9);
+				color:white;
+				display:none;
+			}
+			#quizElf {
+				height:380px;
+				width:auto;
+				float:left;
+			}
+			#quizButton{
+				position:absolute;
+				top:340px;
+				left:460px;
+				width:80px;
+				height:40px;
+				background-color:pink;
+			}
+			#moreGame {
+				position:absolute;
+				top:0;
+				right:0;
+			}
+			#quizQuestion{
+				text-align:left;
+				font-size:24px;
+			}
+			#selection{
+				text-align:left;
+				font-size:18px;
+			}
+			.fb-share-button{
+				position:absolute;
+				left:450px;
+				bottom:40px;
+            }
+			#playagain{
+				position:absolute;
+				left:40%;
+				top:370px;
+				display:none;
+			}
+		</style>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	</head>
+  
+  <body>
+  <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=432847227095048";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+  <div class="gamePanel">
+	<div id="header">
+		<h2 id="day">Day 01</h2>
+		<h2 id="score">Score: 0</h2>
+		<h2 id="gold">Gold: 300</h2>
+	</div>
+	<div id="main">
+		<img id="backgroundImg" src="./img/background.png"/>
+		<div class="buttonModule">
+			<div class="button" id="shop">
+				<img src="./img/shop_icon.png"/><br/>SHOP
+			</div>
+			<div class="button" id="storage">
+				<img src="./img/storage_icon.png"/><br/>STORAGE
+			</div>
+			<div class="button" id="feed">
+				<img src="./img/feed_icon.png"/><br/>FEED
+			</div>
+			<div class="button" id="status">
+				<img src="./img/status_icon.png"/><br/>STATUS
+			</div>
+			<div class="button" id="sleep">
+				<img src="./img/sleep_icon.png"/><br/>SLEEP
+			</div>
+		</div>
+		<div class="npc">
+		</div>
+		<img src="./img/pet01.png" id="petImage"/>
+		<canvas id="moreGame" width="250" height="500"></canvas>
+		<img src="./img/playmore.png" id="playMore"/>
+		<div class="fb-share-button" data-href="http://students.bcitdev.com/A00999595/HungryPets.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+	</div>
+	<canvas id="shopCanvas" width="600" height="400"></canvas>
+	<div id="dailyQuiz">
+		<img src="./img/elf.gif" id="quizElf"/>
+		<p id="quizQuestion">Question<p>
+		<div id="selection">
+			<input type="radio" name="quiz" id="selection1"><span>Selection 1</span></input><br/>
+			<input type="radio" name="quiz" id="selection2"><span>Selection 2</span></input><br/>
+			<input type="radio" name="quiz" id="selection3"><span>Selection 3</span></input><br/>
+			<input type="radio" name="quiz" id="selection4"><span>Selection 4</span></input><br/>
+		</div>
+		<button id="quizButton">Choose</button>
+	</div>
+	<div id="canvas_layer">
+	</div>
+	<img id="playagain" src="./img/PlayAgain.png"/>
+  </div>
+  <script src="js/js1.js"></script>
+  </body>
+ </html>
